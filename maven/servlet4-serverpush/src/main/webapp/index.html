@@ -17,6 +17,12 @@
         <form action="https://syanagih-jp.jp.oracle.com:8181/web/index" method="get">
             <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Index</button></p>          
         </form>
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/index2" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Index without ServerPush</button></p>          
+        </form>
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/indexpost" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Push with POST Method</button></p>          
+        </form>
         
         <form action="http://syanagih-jp.jp.oracle.com:8080/web/index" method="get">
             <p><button type="submit" class="btn btn-default btn-lg btn-block"  name="time" value="1000">[HTTP/1.1] Index with WAIT 1000</button></p>          
@@ -25,7 +31,10 @@
         <form action="https://syanagih-jp.jp.oracle.com:8181/web/index" method="get">
             <p><button type="submit" class="btn btn-primary btn-lg btn-block"  name="time" value="1000">[HTTP/2] Index with WAIT 1000</button></p>          
         </form>
-        
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/index2" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block"  name="time" value="1000">[HTTP/2] Index with WAIT 1000 without ServerPush</button></p>          
+        </form>
+
         <form action="http://syanagih-jp.jp.oracle.com:8080/web/http1" method="get">
             <p><button type="submit" class="btn btn-default btn-lg btn-block">[HTTP/1.1] Gallery</button></p>          
         </form>
@@ -33,17 +42,27 @@
         <form action="https://syanagih-jp.jp.oracle.com:8181/web/http2" method="get">
             <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Gallery</button></p>          
         </form>
-        
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/http2nosp" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Gallery without ServerPush</button></p>          
+        </form>
+
         <form action="http://syanagih-jp.jp.oracle.com:8080/web/http1" method="get">
             <p><button type="submit" class="btn btn-default btn-lg btn-block" name="time" value="5000">[HTTP/1.1] Gallery with WAIT 5000</button></p>          
         </form>
-        
+
         <form action="https://syanagih-jp.jp.oracle.com:8181/web/http2" method="get">
             <p><button type="submit" class="btn btn-primary btn-lg btn-block" name="time" value="5000">[HTTP/2] Gallery with WAIT 5000</button></p>          
         </form>
-
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/http2nosp" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block" name="time" value="5000">[HTTP/2] Gallery with WAIT 5000 without ServerPush</button></p>          
+        </form>
+        
         <form action="http://syanagih-jp.jp.oracle.com:8080/web/include" method="get">
-            <p><button type="submit" class="btn btn-default btn-lg btn-block">GET INCLUDE</button></p>          
+            <p><button type="submit" class="btn btn-default btn-lg btn-block">[HTTP/1.1] JSP INCLUDE</button></p>          
+        </form>
+
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/include" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] JSP INCLUDE</button></p>          
         </form>
     </body>
 </html>
