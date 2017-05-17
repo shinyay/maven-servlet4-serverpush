@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>メニュー</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico?v=170517">
+        <link href="bootstrap/css/bootstrap.min.css?v=170517" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.min.js?v=170517"></script>
+    </head>
+    <body>
+        <img src="images/duke.png?v=170517" class="img-responsive center-block" alt="Java Day Tokyo 2017" width="420" height="420" />
+        <form action="http://syanagih-jp.jp.oracle.com:8080/web/index" method="get">
+            <p><button type="submit" class="btn btn-default btn-lg btn-block">[HTTP/1.1] Index</button></p>          
+        </form>
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/index" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Index</button></p>          
+        </form>
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/index2" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Index without ServerPush</button></p>          
+        </form>
+        <form action="https://syanagih-jp.jp.oracle.com:8181/web/indexquery" method="get">
+            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Push with Query</button></p>          
+        </form>
+    </body>
+</html>

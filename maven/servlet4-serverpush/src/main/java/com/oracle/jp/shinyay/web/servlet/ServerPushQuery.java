@@ -15,8 +15,8 @@ import javax.servlet.http.PushBuilder;
  *
  * @author syanagih
  */
-@WebServlet(name = "ServerPushPost", urlPatterns = {"/indexpost"})
-public class ServerPushPost extends HttpServlet {
+@WebServlet(name = "ServerPushQuery", urlPatterns = {"/indexquery"})
+public class ServerPushQuery extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,20 +34,20 @@ public class ServerPushPost extends HttpServlet {
 
         if (pushBuilder != null) {
             pushBuilder
-                    .method("POST")
                     .path("bootstrap/css/bootstrap.min.css")
                     .addHeader("content-type", "text/css")
                     .push();
             pushBuilder
-                    .path("bootstrap/js/bootstrap.min.js")
+                    .path("bootstrap/js/bootstrap.min.js?v=170517")
                     .addHeader("content-type", "text/javascript")
                     .push();
             pushBuilder
                     .path("images/duke.png")
+                    .queryString("v=170517")
                     .addHeader("content-type", "image/png")
                     .push();
             pushBuilder
-                    .path("images/favicon.ico")
+                    .path("images/favicon.ico?v=170517")
                     .addHeader("content-type", "image/x-icon")
                     .push();
             pushBuilder
@@ -59,7 +59,7 @@ public class ServerPushPost extends HttpServlet {
         Optional.ofNullable(request.getParameter("time"))
                 .ifPresent(s -> processBackend(s));
         response.setContentType("text/html;charset=UTF-8");
-        RequestDispatcher disp = request.getRequestDispatcher("index.html");
+        RequestDispatcher disp = request.getRequestDispatcher("indexbusting.html");
         disp.forward(request, response);
     }
 
