@@ -9,41 +9,21 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <img src="images/duke.png" class="img-responsive center-block" alt="Java Day Tokyo 2017" width="420" height="420" />
-        <form action="http://syanagih-jp.jp.oracle.com:8080/web/index" method="get">
+        <img src="images/shinyay.png" class="img-responsive center-block" alt="Java Day Tokyo 2017" width="460" height="460" />
+        <form action="http://localhost:8080/web/index" method="get">
             <p><button type="submit" class="btn btn-default btn-lg btn-block">[HTTP/1.1] Index</button></p>          
         </form>
 
-        <form action="https://syanagih-jp.jp.oracle.com:8181/web/index" method="get">
+        <form action="https://localhost:8181/web/index" method="get">
             <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Index</button></p>          
         </form>
         
-        <form action="http://syanagih-jp.jp.oracle.com:8080/web/index" method="get">
+        <form action="http://localhost:8080/web/index" method="get">
             <p><button type="submit" class="btn btn-default btn-lg btn-block"  name="time" value="1000">[HTTP/1.1] Index with WAIT 1000</button></p>          
         </form>
 
-        <form action="https://syanagih-jp.jp.oracle.com:8181/web/index" method="get">
+        <form action="https://localhost:8181/web/index" method="get">
             <p><button type="submit" class="btn btn-primary btn-lg btn-block"  name="time" value="1000">[HTTP/2] Index with WAIT 1000</button></p>          
-        </form>
-        
-        <form action="http://syanagih-jp.jp.oracle.com:8080/web/http1" method="get">
-            <p><button type="submit" class="btn btn-default btn-lg btn-block">[HTTP/1.1] Gallery</button></p>          
-        </form>
-
-        <form action="https://syanagih-jp.jp.oracle.com:8181/web/http2" method="get">
-            <p><button type="submit" class="btn btn-primary btn-lg btn-block">[HTTP/2] Gallery</button></p>          
-        </form>
-        
-        <form action="http://syanagih-jp.jp.oracle.com:8080/web/http1" method="get">
-            <p><button type="submit" class="btn btn-default btn-lg btn-block" name="time" value="5000">[HTTP/1.1] Gallery with WAIT 5000</button></p>          
-        </form>
-        
-        <form action="https://syanagih-jp.jp.oracle.com:8181/web/http2" method="get">
-            <p><button type="submit" class="btn btn-primary btn-lg btn-block" name="time" value="5000">[HTTP/2] Gallery with WAIT 5000</button></p>          
-        </form>
-
-        <form action="http://syanagih-jp.jp.oracle.com:8080/web/include" method="get">
-            <p><button type="submit" class="btn btn-default btn-lg btn-block">GET INCLUDE</button></p>          
         </form>
     </body>
 </html>
