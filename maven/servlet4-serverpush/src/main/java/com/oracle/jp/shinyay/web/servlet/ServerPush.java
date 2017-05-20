@@ -33,12 +33,12 @@ public class ServerPush extends HttpServlet {
         PushBuilder pushBuilder = request.newPushBuilder();
 
         if (pushBuilder != null) {
-            pushBuilder
-                    .path("bootstrap/css/bootstrap.min.css")
-                    .push();
-            pushBuilder
-                    .path("bootstrap/js/bootstrap.min.js")
-                    .push();
+                pushBuilder
+                        .path("bootstrap/css/bootstrap.min.css")
+                        .push();
+                pushBuilder
+                        .path("bootstrap/js/bootstrap.min.js")
+                        .push();
             pushBuilder
                     .path("images/shinyay.png")
                     .push();
