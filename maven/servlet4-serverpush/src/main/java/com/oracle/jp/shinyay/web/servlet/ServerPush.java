@@ -35,23 +35,18 @@ public class ServerPush extends HttpServlet {
         if (pushBuilder != null) {
             pushBuilder
                     .path("bootstrap/css/bootstrap.min.css")
-                    .addHeader("content-type", "text/css")
                     .push();
             pushBuilder
                     .path("bootstrap/js/bootstrap.min.js")
-                    .addHeader("content-type", "text/javascript")
                     .push();
             pushBuilder
-                    .path("images/duke.png")
-                    .addHeader("content-type", "image/png")
+                    .path("images/shinyay.png")
                     .push();
             pushBuilder
                     .path("images/favicon.jpg")
-                    .addHeader("content-type", "image/x-icon")
                     .push();
             pushBuilder
                     .path("images/dog1.jpg")
-                    .addHeader("content-type", "image/jpeg")
                     .push();
         }
 
