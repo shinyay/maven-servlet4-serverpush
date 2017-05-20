@@ -40,7 +40,7 @@ public class ServerPush extends HttpServlet {
                     .path("bootstrap/js/bootstrap.min.js")
                     .push();
             pushBuilder
-                    .path("images/duke.png")
+                    .path("images/shinyay.png")
                     .push();
             pushBuilder
                     .path("images/favicon.jpg")
